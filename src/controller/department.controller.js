@@ -32,7 +32,8 @@ exports.findAll = async (req, res) => {
             message:
                 error.message || "Some error occurred while retrieving departments."
         });
-    }
+    
+      }
 
 }
 
