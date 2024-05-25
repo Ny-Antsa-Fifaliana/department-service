@@ -16,6 +16,7 @@ app.use(
       extended: true
     })
 );
+
 app.use(cors({origin: '*'}));
 app.use(bodyParser.json());
 
@@ -29,7 +30,7 @@ db.sequelize.sync({ force: false})
 
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello World from department service API! 🌈🌈' });
+    res.json({ message: 'Hello World from department service API! 🌈' });
 });
 app.use('/api', apiRoutes);
 
